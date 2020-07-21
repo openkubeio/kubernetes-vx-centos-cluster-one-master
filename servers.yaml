@@ -1,0 +1,25 @@
+---
+- name: master.qa.kube.io
+  box: open-kubeio-mv17.3
+  cpus: 2
+  memory: 2048
+  ip: 192.168.205.41
+  port: 10122
+- name: worker.qa.kube.io
+  box: open-kubeio-wv17.3
+  cpus: 2
+  memory: 2024
+  ip: 192.168.205.42
+  port: 10122
+#- name: worker2.qa.kube.io
+#  box: centos/7
+#  cpus: 1
+#  memory: 1024
+#  ip: 192.168.205.43
+#  port: 10122
+# -name: worker3.qa.kube.io
+#  box: centos/7
+#  cpus: 1
+#  memory: 1024
+#  ip: 192.168.205.44 
+#  port: 10122

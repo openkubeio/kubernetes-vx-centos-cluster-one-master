@@ -1,5 +1,9 @@
 *.gem
 *.rbc
+**/*.log
+/.vagrant
+/.vs
+/.certs
 /.config
 /coverage/
 /InstalledFiles
@@ -9,6 +13,7 @@
 /test/tmp/
 /test/version_tmp/
 /tmp/
+/README.md
 
 # Used by dotenv library to load environment variables.
 # .env
