@@ -56,6 +56,7 @@ Vagrant.configure("2") do |config|
 	    srv.vm.provision "shell", inline: <<-SHELL
 		        
             echo "--- Join as worker node "
+			sudo sed -i  "s~192.168.100.3~$IPADDR_ENP0S8~g" /usr/lib/systemd/system/kubelet.service.d/10-kubeadm.conf
             sudo chmod +x /data/$cluster/kubeadm_join_cmd.sh
             sudo sh /data/$cluster/kubeadm_join_cmd.sh
             
